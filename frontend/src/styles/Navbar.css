@@ -1,0 +1,104 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 100vw;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none; /* No bullets on main navbar items */
+  gap: 1.5rem;
+}
+
+.nav-item a,
+.nav-item .dropdown-item a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover,
+.dropdown-item a:hover {
+  color: #0073e6;
+}
+
+/* Dropdown Containers */
+.cover-letter,
+.about {
+  position: relative;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  left: 0;
+  min-width: 220px;
+  padding: 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 500;
+}
+
+/* Remove bullet points from dropdown items' list */
+.dropdown-menu ul {
+  list-style: none; /* No bullets on dropdown items */
+  padding-left: 0; /* Remove padding */
+}
+
+/* Dropdown Content */
+.dropdown-header {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.dropdown-item a {
+  color: #555;
+  text-decoration: none;
+  padding: 0.5rem;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.dropdown-item a:hover {
+  color: #0073e6;
+}
+
+/* Separator line between dropdown items */
+.nav-item .dropdown-item:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}
