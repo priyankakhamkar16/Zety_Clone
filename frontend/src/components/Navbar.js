@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">ZetyClone</div>
+      <div className="navbar-logo">NextStepCV</div>
       <button className="menu-toggle" onClick={toggleMenu}>
         ☰
       </button>
