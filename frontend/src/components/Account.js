@@ -4,9 +4,9 @@ import React, { useState } from 'react';
 import '../styles/Account.css';
 
 function Account() {
-  const [name, setName] = useState("John Doe");
-  const [email, setEmail] = useState("johndoe@example.com");
-  const [phone, setPhone] = useState("123-456-7890");
+  const [name, setName] = useState(""); // Initialize as empty string
+  const [email, setEmail] = useState(""); // Initialize as empty string
+  const [phone, setPhone] = useState(""); // Initialize as empty string
   const [profilePic, setProfilePic] = useState(null);
 
   const handleImageUpload = (e) => {
@@ -44,6 +44,7 @@ function Account() {
           <input 
             type="text" 
             value={name} 
+            placeholder="Enter your name" // Optional placeholder
             onChange={(e) => setName(e.target.value)} 
           />
         </label>
@@ -53,6 +54,7 @@ function Account() {
           <input 
             type="email" 
             value={email} 
+            placeholder="Enter your email" // Optional placeholder
             onChange={(e) => setEmail(e.target.value)} 
           />
         </label>
@@ -62,6 +64,7 @@ function Account() {
           <input 
             type="text" 
             value={phone} 
+            placeholder="Enter your phone number" // Optional placeholder
             onChange={(e) => setPhone(e.target.value)} 
           />
         </label>
